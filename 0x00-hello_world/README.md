@@ -3,4 +3,5 @@ compiler
 assembler
 name
 put
-hello printf 
+hello printf
+size 
