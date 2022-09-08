@@ -2,4 +2,5 @@
 compiler
 assembler
 name
-put 
+put
+hello printf 
