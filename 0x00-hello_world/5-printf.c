@@ -1,7 +1,7 @@
-#include >stdio.h>
+#include <stdio.h>
 
 /**
- * main - print the script in the put function
+ * main - print the string in the put function
  *
  * Description using the main function
  * this program prints "Programming is like a building a multilingual puzzle
@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art.\n") ;
+	printf("with proper grammar, but the outcome is a piece of art,\n") ;
 	return (0) ;
 }
 
