@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 /**
- * print_alphabet - prints the alphabet in lowercass with ending new line
+ *main - prints the alphabet in lowercass with ending new line
  *
- * Return: void, and prints the alphabet on the standard output
+ *Return: void, and prints the alphabet on the standard output
  */
 
 void print_alphabet(void)
@@ -12,8 +12,8 @@ void print_alphabet(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(ch)
+		_putchar(ch);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
