@@ -6,7 +6,7 @@
  *Return: void, and prints the alphabet on the standard output
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char ch;
 
