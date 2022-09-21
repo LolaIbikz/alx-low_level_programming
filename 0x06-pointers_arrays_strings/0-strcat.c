@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * *_strcat - concatenates @src to @dest
@@ -18,4 +19,3 @@ char *_strcat(char *dest, char *src)
 		dest[dest_len++] = src[index];
 	return (dest);
 }
-
