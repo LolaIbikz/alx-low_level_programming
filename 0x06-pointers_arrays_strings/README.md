@@ -2,3 +2,5 @@
 1 - char *_strncat(char *dest, char *src, int n);
 2 - a function that copies a string
 3 - a function that compares two strings.
+4 -  a function that reverses the content of an array of integers.
+
