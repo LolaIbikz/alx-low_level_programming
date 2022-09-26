@@ -3,7 +3,7 @@
 
 int _putchar(char c);
 char *_memset(char*,char,unsigned int);
-char *_strchr(char*,char);
+char *_strchr(char *s, char c);
 
 #endif
 
