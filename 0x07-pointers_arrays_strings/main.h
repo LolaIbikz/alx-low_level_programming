@@ -3,7 +3,7 @@
 
 int _putchar(char c);
 char *_memset(char*,char,unsigned int);
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char*,char);
 
 #endif
 
