@@ -2,51 +2,43 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates two strings into a newly allocated space in memory
- * @s1: First string to be concatenated
- *  @s2: Second string to be concatenated after s1
- *
- *  Return: A pointer to the newly allocated memory, or NULL on failure
+ * str_concat - a function that concatenates two strings
+ * @s1: input
+ * @s2: input
+ * Return: concat os s1 and s2
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	char *ptr = NULL;
-	char *as1 = s1;
-	char *as2 = s2;
+	char *concat;
+	int i, ci;
 
-	if (as1 == NULL)
-		as1 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (as2 == NULL)
-		as2 = "";
-
-	ptr = as1;
-	while (*ptr++)
+	i = ci = 0;
+	while (s1[i] != '\0')
 		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	concat = malloc(sizeof(char)
 
-	ptr = as2;
-	while (*ptr++)
-		i++;
-
-	i++;
-	ptr = malloc(i * sizeof(char));
-
-	if (ptr == NULL)
+	if (concat == NULL)
 		return (NULL);
-
-	i = 0;
-	while (*as1)
+	i = ci = 0;
+	while (s1[i] != '\0')
 	{
-		ptr[i++] = *as1++;
+		concat[i] = s1[i];
+		i++;
 	}
 
-	while (*as2)
+	while (s2[ci] != '\0')
 	{
-		ptr[i++] = *as2++;
+		concat[i] = s2[ci];
+		i++, ci++;
 	}
-	ptr[i] = *as2;
-
-	return (ptr);
+	concat[i] = '\0';
+	return (concat);
 }
+
