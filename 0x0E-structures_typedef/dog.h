@@ -1,8 +1,9 @@
-#ifndef _dog_t_
-#define _dog_t_
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * struct dog - such structure, wow
+ * struct dog - a dog
+ *
  * @name: dog's name
  * @age: dog's age
  * @owner: dog's owner
@@ -13,19 +14,14 @@ typedef struct dog
 	char *name;
 	float age;
 	char *owner;
-}
-dog_t;
+} dog;
 
-void init_dog(dog_t *d, char *name, float age, char *owner);
-
+typedef dog dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-
 dog_t *new_dog(char *name, float age, char *owner);
-
 void free_dog(dog_t *d);
 
+int putchar(char c);
 
-
-#endif /* _dog_t_ */
-
-
+#endif
