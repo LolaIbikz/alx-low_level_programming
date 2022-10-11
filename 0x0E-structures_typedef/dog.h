@@ -1,5 +1,5 @@
-#ifndef _dog_h_
-#define _dog_h_
+#ifndef _dog_t_
+#define _dog_t_
 
 /**
  * struct dog - such structure, wow
@@ -16,7 +16,7 @@ typedef struct dog
 }
 dog_t;
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
+void init_dog(dog_t *d, char *name, float age, char *owner);
 
 void print_dog(struct dog *d);
 
@@ -26,6 +26,6 @@ void free_dog(dog_t *d);
 
 
 
-#endif /* _dog_h_ */
+#endif /* _dog_t_ */
 
 
