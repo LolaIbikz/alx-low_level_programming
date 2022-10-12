@@ -7,7 +7,7 @@
  * function
  * @s: operator passed as argument to the program
  *
- * Return: a pointer to the function that corresponds to the operator given as a
+ * Return: a pointer to the function that corresponds to the operator given asa
  * parameter
  */
 
